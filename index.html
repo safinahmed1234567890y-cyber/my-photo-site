@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TORiK</title>
+<title>TORiK - Kali Dragon</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
-body{min-height:100vh;background:#050a1a;display:flex;justify-content:center;align-items:center;padding:20px}
-.card{width:100%;max-width:350px;background:#0f1733;border:1px solid #2a6aff;border-radius:28px;padding:30px 25px;text-align:center;box-shadow:0 0 25px rgba(42,106,255,0.4)}
-.avatar{width:160px;height:160px;margin:0 auto 18px;border-radius:50%;border:3px solid #2a6aff;box-shadow:0 0 20px #2a6aff;object-fit:cover;display:block}
-h1{color:white;font-size:38px;letter-spacing:3px;text-shadow:0 0 12px #2a6aff}
-.sub{color:#7aa0d6;font-size:11px;letter-spacing:3px;margin:6px 0 18px}
-.line{height:1px;background:linear-gradient(90deg,transparent,#2a6aff,transparent);margin:15px 0}
-.box{background:rgba(42,106,255,0.1);border-left:3px solid #2a6aff;padding:12px;text-align:left;border-radius:0 10px 10px 0}
-.box small{color:#2a6aff}
-.box p{color:#c0d0f0;font-size:14px;margin-top:4px}
-.btn{display:block;margin-top:16px;background:#1877f2;color:white;text-decoration:none;padding:13px;border-radius:11px;font-weight:bold}
-.pal{margin-top:12px;color:#4ade80;font-weight:bold}
+body{min-height:100vh;background:#040712;display:flex;justify-content:center;align-items:center;padding:16px}
+.card{width:100%;max-width:390px;background:radial-gradient(120% 120% at 50% 0%,#182654 0%,#0a0f23 55%,#050712 100%);border-radius:26px;padding:28px 22px;text-align:center;position:relative;box-shadow:0 0 0 1px #2a4fd0 inset, 0 0 35px rgba(73,119,255,0.5);border:2px solid transparent;background-clip:padding-box}
+.card::before{content:"";position:absolute;inset:-2px;border-radius:28px;background:linear-gradient(135deg,#4a7bff,#a855f7,#4a7bff);z-index:-1}
+.dragon{width:120px;margin:0 auto 10px;filter:drop-shadow(0 0 15px #5b8cff)}
+.dragon img{width:100%}
+h1{font-size:52px;letter-spacing:2px;background:linear-gradient(90deg,#5b8cff,#a855f7,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:900;text-shadow:0 0 20px rgba(90,140,255,0.6)}
+.sub{color:#8fa2d0;font-size:12px;letter-spacing:3px;margin:8px 0 18px}
+.box{border:1px solid #3a5bd0;border-radius:14px;padding:14px 14px 14px 44px;text-align:left;position:relative;background:rgba(18,31,77,0.7);margin:18px 0}
+.box::before{content:"💡";position:absolute;left:12px;top:14px;font-size:22px}
+.box small{color:#a855f7;font-weight:bold;letter-spacing:1px;font-size:11px}
+.box p{color:#c8d6f5;font-size:14px;margin-top:4px;line-height:1.5}
+.btns{display:flex;gap:10px;margin-top:18px}
+.btn{flex:1;text-decoration:none;padding:13px 10px;border-radius:12px;font-weight:bold;font-size:14px;display:flex;align-items:center;justify-content:center;gap:6px}
+.fb{background:#1877f2;color:white;box-shadow:0 4px 15px rgba(24,119,242,0.4)}
+.ps{background:rgba(34,197,94,0.15);border:1px solid #22c55e;color:#4ade80}
+.tags{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.tags span{border:1px solid #3a4a7a;color:#7a8fbf;font-size:10px;padding:6px 12px;border-radius:20px}
+.footer{margin-top:18px;color:#4a5d8a;font-size:10px;letter-spacing:2px}
 </style>
 </head>
 <body>
 <div class="card">
-<img class="avatar" src="torik.jpg">
+<div class="dragon"><img src="https://www.kali.org/images/kali-dragon-icon.svg"></div>
 <h1>TORiK</h1>
 <div class="sub">CYBER • PRIVACY • JUSTICE</div>
-<div class="line"></div>
-<div class="box"><small>উপদেশ</small><p>জ্ঞান দিয়ে রক্ষা করো, ধ্বংস নয়। সত্যের পক্ষে থাকো।</p></div>
-<div class="pal">🇵🇸 #StandWithPalestine</div>
-<a class="btn" href="https://www.facebook.com/profile.php?id=61591022747655" target="_blank">Follow on Facebook</a>
+
+<div class="box">
+<small>উপদেশ</small>
+<p>জ্ঞান দিয়ে রক্ষা করো, ধ্বংস নয়। যাচাই করো, শেখো, আর সত্যের পক্ষে থাকো।</p>
+</div>
+
+<div class="btns">
+<a class="btn fb" href="https://www.facebook.com/profile.php?id=61591022747655" target="_blank">Facebook</a>
+<a class="btn ps" href="#">#Palestine</a>
+</div>
+
+<div class="tags">
+<span>OSINT</span><span>SECURITY</span><span>RECON</span>
+</div>
+
+<div class="footer">TORiK • Level 99 • 2026</div>
 </div>
 </body>
 </html>
